@@ -1,0 +1,14 @@
+[SddmGreeterTheme]
+Name=gunterberg-ssdm-theme
+Description=gunterberg-ssdm-theme
+Author=gunterberg
+License=GPL-3.0-or-later
+Type=sddm-theme
+Version=1.4
+ConfigFile=theme.conf
+Screenshot=preview.png
+MainScript=Main.qml
+TranslationsDirectory=translations
+Theme-Id=gunterberg-sddm-theme
+Theme-API=2.0
+QtVersion=6
