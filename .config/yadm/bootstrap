@@ -6,7 +6,7 @@ sddm_theme() {
   local font_dest="/usr/local/share/fonts/gunterberg-sddm-themes"
 
   local theme_source="$HOME/.config/sddm/themes/."
-  local theme_dest="/usr/share/sddm/themes/gunterberg-ssdm-themes"
+  local theme_dest="/usr/share/sddm/themes/gunterberg-sddm-themes"
 
   local config_source="$HOME/.config/sddm/config"
   local config_dest="/etc/sddm.conf.d"
@@ -33,7 +33,7 @@ sddm_theme() {
   echo "installing gunterberg-sddm-theme fonts"
   sudo rm -rf "$font_dest"
   sudo mkdir -p "$font_dest"
-  sudo cp -vfr "$font_source/." "$font_dest/"
+  sudo cp -fr "$font_source/." "$font_dest/"
 
   echo "refreshing font cache"
   sudo fc-cache -f
@@ -41,11 +41,11 @@ sddm_theme() {
   echo "installing sddm theme at $theme_dest"
   sudo rm -rf "$theme_dest"
   sudo mkdir -p "$theme_dest"
-  sudo cp -vfr "$theme_source/." "$theme_dest/"
+  sudo cp -fr "$theme_source/." "$theme_dest/"
 
   echo "installing sddm configuration at $config_dest"
   sudo mkdir -p "$config_dest"
-  sudo cp -vfr "$config_source/." "$config_dest/"
+  sudo cp -fr "$config_source/." "$config_dest/"
 }
 
 sddm_theme
