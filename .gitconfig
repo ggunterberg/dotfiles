@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[user]
+	email = gustavodevrr@gmail.com
+	name = gunterberg
+[core]
+	editor = code --wait
